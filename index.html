@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
+<html lang="he" dir="rtl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מסלול רומניה - ספטמבר 2025</title>
@@ -105,7 +103,7 @@
 
         .schedule-table {
             width: 100%;
-            min-width: 800px;
+            min-width: 600px;
             border-collapse: collapse;
             background: white;
             border-radius: 15px;
@@ -171,8 +169,9 @@
         }
 
         .activities-cell {
-            color: #34495e;
+            color: #2c3e50;
             max-width: 400px;
+            font-weight: 500;
         }
 
         .time {
@@ -252,7 +251,7 @@
         }
 
         /* Mobile Improvements */
-        @media (max-width: 768px) {
+            @media (max-width: 768px) {
             .container {
                 padding: 15px;
                 margin: 5px;
@@ -265,13 +264,18 @@
             }
 
             .schedule-table {
-                min-width: 600px;
+                min-width: 500px;
             }
 
             .schedule-table th,
             .schedule-table td {
                 padding: 12px 8px;
-                font-size: 13px;
+                font-size: 14px;
+            }
+
+            .activities-cell {
+                color: #1a252f;
+                font-weight: 600;
             }
 
             .info-card {
@@ -283,15 +287,20 @@
             }
         }
 
-        @media (max-width: 480px) {
+            @media (max-width: 480px) {
             .schedule-table {
-                min-width: 500px;
+                min-width: 450px;
             }
 
             .schedule-table th,
             .schedule-table td {
                 padding: 10px 6px;
-                font-size: 12px;
+                font-size: 13px;
+            }
+
+            .activities-cell {
+                color: #1a252f;
+                font-weight: 600;
             }
 
             .time {
@@ -300,8 +309,7 @@
             }
 
             .highlight {
-                padding: 3px 6px;
-                font-size: 12px;
+                font-size: 13px;
             }
         }
 
@@ -376,36 +384,31 @@
         <div class="trip-info">
             <div class="info-card">
                 <h3>🗓️ משך הטיול</h3>
-                <p>9 ימים מלאים</p>
+                <p>9 ימים </p>
             </div>
             <div class="info-card">
                 <h3>🏨 לינה</h3>
                 <p>בראשוב (4 לילות)<br>בוקרשט (4 לילות)</p>
             </div>
-            <div class="info-card">
+            <div class="info-card" style="transform: translateY(-5px);">
                 <h3>🚗 תחבורה</h3>
                 <p>השכרת רכב<br>+ הליכה</p>
             </div>
-            <div class="info-card">
-                <h3>🎯 עיקר הטיול</h3>
-                <p>טירות, טבע, ערים<br>ותרבות מקומית</p>
-            </div>
+            
         </div>
 
         <div class="schedule-container">
             <table class="schedule-table">
                 <thead>
                     <tr>
-                        <th>יום</th>
-                        <th>תאריך</th>
+                        <th>יום ותאריך</th>
                         <th>לינה</th>
                         <th>פעילויות עיקריות</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="day-cell">שני</td>
-                        <td class="day-cell">1.9</td>
+                    <tr style="opacity: 1; transform: scale(1); transition: opacity 0.6s, transform 0.6s; z-index: auto;">
+                        <td class="day-cell">יום 1<br>1.9</td>
                         <td class="location-cell">בראשוב</td>
                         <td class="activities-cell">
                             <span class="time">12:00</span> נחיתה והשכרת רכב + נסיעה לסיניה כשעה וחצי<br>
@@ -414,21 +417,19 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">שלישי</td>
-                        <td class="day-cell">2.9</td>
+                    <tr style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 0.1s, transform 0.6s 0.1s; z-index: auto;">
+                        <td class="day-cell">יום 2<br>2.9</td>
                         <td class="location-cell">בראשוב</td>
                         <td class="activities-cell">
-                            <span class="time">08:00</span> פארק חבלים Aventura park או 7 Ladders Canyon 🧗‍♂️<br>
+                            <span class="time">08:00</span> פארק חבלים Aventura park או 7 Ladders Canyon 🧗&zwj;♂️<br>
                             <span class="time">11:30-12:30</span> טירת פלש 🏰<br>
                             <span class="time">13:00-14:00</span> טירת פלשור 🏛️<br>
                             <span class="time">15:00-17:00</span> רכבל Bucegi או מסלול קל במפלי Urlătoarea 🚡
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">רביעי</td>
-                        <td class="day-cell">3.9</td>
+                    <tr style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 0.2s, transform 0.6s 0.2s; z-index: auto;">
+                        <td class="day-cell">יום 3<br>3.9</td>
                         <td class="location-cell">בראשוב</td>
                         <td class="activities-cell">
                             <span class="time">09:00</span> בראשוב: כיכר המועצה + כנסייה שחורה + רחוב החבל ⛪<br>
@@ -438,33 +439,30 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">חמישי</td>
-                        <td class="day-cell">4.9</td>
+                    <tr style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 0.3s, transform 0.6s 0.3s; z-index: auto;">
+                        <td class="day-cell">יום 4<br>4.9</td>
                         <td class="location-cell">בראשוב</td>
                         <td class="activities-cell">
-                            <span class="time">09:30-11:30</span> טירת בראן + מוזיאון האימה 🧛‍♂️<br>
+                            <span class="time">09:30-11:30</span> טירת בראן + מוזיאון האימה 🧛&zwj;♂️<br>
                             <span class="time">12:30-15:30</span> שמורת דובים זרנשטי 🐻<br>
                             <span class="time">16:30</span> סיור בכפרים 🏘️<br>
                             <br><span class="highlight">אופציה ב':</span> טיול יומי באגם Balea 🏔️
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">שישי</td>
-                        <td class="day-cell">5.9</td>
+                    <tr style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 0.4s, transform 0.6s 0.4s; z-index: auto;">
+                        <td class="day-cell">יום 5<br>5.9</td>
                         <td class="location-cell">בוקרשט</td>
                         <td class="activities-cell">
                             <span class="time">08:00</span> יציאה בכביש טרנספגראשאן - 3.5 שעות נסיעה 🛣️<br>
                             <span class="time">12:00</span> הגעה לבוקרשט<br>
-                            <span class="time">14:00</span> Therme Bucharest 🏊‍♂️<br>
+                            <span class="time">14:00</span> Therme Bucharest 🏊&zwj;♂️<br>
                             <span class="time">17:30-20:30</span> הכנות לשבת 🕯️
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">שבת</td>
-                        <td class="day-cell">6.9</td>
+                    <tr style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s 0.5s, transform 0.6s 0.5s; z-index: auto;">
+                        <td class="day-cell">יום 6<br>6.9</td>
                         <td class="location-cell">בוקרשט</td>
                         <td class="rest-day">
                             שבת מנוחה 🕯️<br>
@@ -473,9 +471,8 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">ראשון</td>
-                        <td class="day-cell">7.9</td>
+                    <tr style="opacity: 1; transform: scale(1); transition: opacity 0.6s 0.6s, transform 0.6s 0.6s; z-index: auto;">
+                        <td class="day-cell">יום 7<br>7.9</td>
                         <td class="location-cell">בוקרשט</td>
                         <td class="activities-cell">
                             <span class="time">09:00</span> ארמון הפרלמנט 🏛️<br>
@@ -485,22 +482,21 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">שני</td>
-                        <td class="day-cell">8.9</td>
+                    <tr style="opacity: 1; transform: scale(1); transition: opacity 0.6s 0.7s, transform 0.6s 0.7s; z-index: auto;">
+                        <td class="day-cell">יום 8<br>8.9</td>
                         <td class="location-cell">בוקרשט</td>
                         <td class="activities-cell">
                             <span class="time">10:00</span> קניות AFI Mall / Mega Mall 🛍️<br>
-                            <span class="time">13:00</span> סיור רגלי בעיר העתיקה 🚶‍♂️<br>
+                            <span class="time">13:00</span> סיור רגלי בעיר העתיקה 🚶&zwj;♂️<br>
                             <span class="time">15:00</span> שוק מקומי 🏪<br>
                             <span class="time">17:00</span> רכישות אחרונות + הכנות 🎁
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td class="day-cell">שלישי</td>
-                        <td class="day-cell">9.9</td>
-                        <td class="location-cell">✈️</td>
+                    <tr style="opacity: 1; transform: scale(1); transition: opacity 0.6s 0.8s, transform 0.6s 0.8s; z-index: auto;">
+                        
+                        <td class="day-cell">יום 9<br>9.9</td>
+                        <td class="location-cell">ישראל✈️</td>
                         <td class="activities-cell">
                             <span class="time">בוקר</span> ארוחת בוקר ואריזות 🧳<br>
                             <span class="time">צהריים</span> החזרת רכב ונסיעה לשדה תעופה 🚗<br>
@@ -520,7 +516,7 @@
                 </div>
                 <div class="tip-card">
                     <h4>🚗 השכרת רכב</h4>
-                    <p>הזמנה מראש + רישיון נהיגה בינלאומי + כרטיס אשראי</p>
+                    <p>הזמנה מראש + רישיון נהיגה בינלאומי </p>
                 </div>
                 <div class="tip-card">
                     <h4>🏨 דירות</h4>
@@ -606,5 +602,5 @@
             document.body.classList.remove('keyboard-navigation');
         });
     </script>
-</body>
-</html>
+
+</body></html>
